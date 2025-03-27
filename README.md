@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio Profesional - Next.js + MongoDB
 
-## Getting Started
+Este es un portafolio profesional desarrollado con **Next.js 14**, utilizando las capacidades fullstack del framework (frontend y backend integrados), **Tailwind CSS** para estilos y una base de datos **MongoDB** para gestionar contenido dinámico. El proyecto se complementa con una herramienta de escritorio en **C#** para editar fácilmente los datos desde una interfaz local.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Frontend y backend en un solo proyecto Next.js
+- Secciones dinámicas: Sobre mí, Proyectos, Experiencia, Educación, Certificaciones y Contacto
+- Sistema de mensajes desde el formulario de contacto
+- Uso de MongoDB como base de datos principal
+- Estilos modernos con Tailwind CSS
+- Arquitectura escalable y organizada
+- Integración futura con una app de escritorio (C#) para gestión del contenido
+
+## 📁 Estructura del proyecto
+
+```
+/
+├── app/               # App Router de Next.js
+├── api/               # Endpoints de API para datos dinámicos
+├── components/        # Componentes reutilizables
+├── lib/
+│   └── mongodb.ts     # Conexión a MongoDB
+├── public/
+├── styles/
+├── utils/
+├── .env.local         # Variables de entorno (no incluidas en Git)
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-## Learn More
+3. Configura tus variables de entorno en `.env.local`:
+```env
+MONGODB_URI=mongodb+srv://<usuario>:<password>@<cluster>.mongodb.net/portfolio
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [x] Secciones dinámicas
+- [x] Backend integrado en Next.js
+- [x] Conexión con MongoDB
+- [x] Formulario de contacto con almacenamiento de mensajes
+- [ ] Herramienta de escritorio en C# para CRUD
+- [ ] Panel de administración web
+- [ ] Modo oscuro
+- [ ] Versión multilenguaje (ES/EN)
 
-## Deploy on Vercel
+## 🛠️ Tecnologías utilizadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js 14](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contribuciones
+
+¡Contribuciones, sugerencias y mejoras son bienvenidas! Abre un *issue* o haz un *pull request* para comenzar.
+
+## 📬 Contacto
+
+Si deseas contactarme, puedes hacerlo desde el formulario del portafolio o directamente:
+
+- Correo: [tucorreo@ejemplo.com](mailto:tucorreo@ejemplo.com)
+- LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
+- Agenda una reunión: [cal.com/tuusuario](https://cal.com/tuusuario)
+
+---
+
+**Hecho con 💻 por Mike Sagi**

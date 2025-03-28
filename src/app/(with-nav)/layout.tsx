@@ -6,7 +6,7 @@ export default function WithNavLayout({ children }: { children: ReactNode }) {
     <>
       <main className="flex">
         <Navbar />
-        <section className="bg-red-600 h-screen w-screen md:w-2/3 py-20 px-12">{children}</section>
+        <section className="h-screen w-screen md:w-2/3 py-20 px-12">{children}</section>
       </main>
     </>
   );

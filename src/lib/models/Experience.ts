@@ -3,8 +3,8 @@ export class Experience {
     public jobTitle: string,
     public company: string,
     public startDate: string,
-    public endDate?: string,
     public description: string,
+    public endDate?: string,
     public _id?: string
   ) {}
 }

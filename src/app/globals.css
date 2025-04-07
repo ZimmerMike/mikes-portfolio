@@ -22,7 +22,43 @@ body {
 h1 {
   font-size: 2.5rem;
   text-align: center;
-} 
+}
+
+.shape {
+  position: absolute;
+  color: white;
+  pointer-events: none;
+  font-size: 4rem;
+  font-weight: 700;
+  user-select: none;
+  animation: float 20s linear infinite;
+}
+
+.shape-x::before {
+  content: '✕';
+}
+.shape-o::before {
+  content: '◯';
+}
+.shape-square::before {
+  content: '▢';
+}
+.shape-triangle::before {
+  content: '△';
+}
+
+/* Animación básica de flotación */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(360deg);
+  }
+}
 
 .glow-overlay {
   --glow-size: 10rem;

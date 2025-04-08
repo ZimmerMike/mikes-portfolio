@@ -2,7 +2,7 @@ import { InfoCardProps } from "@/core/interfaces/info-card.interface";
 
 export default function InfoCard(props: InfoCardProps) {
 
-  const separator = <span className="border-1 border-white/10 w-[95%] h-[1px] my-4" />;
+  const separator = <div className="h-0.5 bg-gradient-to-r from-[transparent] via-white/10 to-[transparent] w-[95%] my-4" />;
 
   return (
     <>

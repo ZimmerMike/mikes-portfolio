@@ -100,5 +100,5 @@ export default function PlayStationBackground() {
     };
   }, []);
 
-  return <div ref={containerRef} className="absolute inset-0 -z-10 overflow-hidden" />;
+  return <div ref={containerRef} className="absolute inset-0 -z-10 overflow-hidden blur-sm" />;
 }

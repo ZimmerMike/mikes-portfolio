@@ -8,9 +8,9 @@ export default function WithNavLayout({ children }: { children: ReactNode }) {
     <>
       <PlayStationBackground />
       <GlowEffect />
-      <main className="flex relative z-10">
+      <main className="flex relative z-10 pt-10 pb-20 md:py-20">
         <Navbar />
-        <section className="h-screen w-screen md:w-2/3 md:py-20 md:px-12 relative">{children}</section>
+        <section className="h-screen w-screen md:w-2/3 md:px-12">{children}</section>
       </main>
     </>
   );

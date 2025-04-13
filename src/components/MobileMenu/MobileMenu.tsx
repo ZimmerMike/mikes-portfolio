@@ -12,13 +12,13 @@ export default function MobileMenu() {
       {/* Botón para abrir menú */}
       <button
         onClick={() => setMenuOpen(true)}
-        className="md:hidden flex items-center justify-center w-full py-2">
+        className="lg:hidden flex items-center justify-center w-full py-2">
         <i className="pi pi-bars text-xl" />
       </button>
 
       {/* Menú lateral flotante */}
-      <div className={`fixed inset-0 z-50 flex justify-end md:hidden transition-all duration-300 ${menuOpen ? 'bg-black/70 visible opacity-100' : 'opacity-0 invisible'}`}>
-        <div className={`bg-slate-900 px-6 py-2 w-1/4 sm:w-1/2 md:w-1/4 shadow-lg absolute bottom-0 rounded-t-2xl transition-transform duration-500 ${menuOpen ? 'translate-y-0' : 'translate-y-full'}`}>
+      <div className={`fixed inset-0 z-50 flex justify-end lg:hidden transition-all duration-300 ${menuOpen ? 'bg-black/70 visible opacity-100' : 'opacity-0 invisible'}`}>
+        <div className={`bg-slate-900 px-6 py-2 w-1/4 lg:w-1/4 shadow-lg absolute bottom-0 rounded-t-2xl transition-transform duration-500 ${menuOpen ? 'translate-y-0' : 'translate-y-full'}`}>
           <ul className="flex flex-col gap-4">
             <NavbarItem href="/experience" icon="pi-briefcase" label="Experiencia" />
             <NavbarItem href="/education" icon="pi-book" label="Educación" />

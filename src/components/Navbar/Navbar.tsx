@@ -14,8 +14,8 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop: sidebar */}
-      <aside className="hidden md:flex w-1/3 h-screen items-center justify-center text-white z-50">
-        <div className="flex w-full items-center md:flex-col md:gap-2 md:w-[90%]">
+      <aside className="hidden lg:flex w-1/3 h-screen items-center justify-center text-white z-50">
+        <div className="flex w-full items-center lg:flex-col lg:gap-2 lg:w-[90%]">
           {navItems.map((item) => (
             <NavbarItem
               key={item.href}
@@ -27,8 +27,8 @@ export default function Navbar() {
       </aside>
 
       {/* Mobile: navbar bottom */}
-      <nav className="md:hidden flex w-screen bg-slate-900 text-white fixed bottom-0 left-0 z-50">
-        <div className="flex w-full items-center overflow-x-scroll md:flex-col md:gap-2 md:w-[90%]">
+      <nav className="lg:hidden flex w-screen bg-slate-900 text-white fixed bottom-0 left-0 z-50">
+        <div className="flex w-full items-center overflow-x-scroll lg:flex-col lg:gap-2 lg:w-[90%]">
           <NavbarItem href="/" icon="pi-home" label="" />
           <NavbarItem href="/projects" icon="pi-code" label="" />
           <NavbarItem href="/contact" icon="pi-envelope" label="" />

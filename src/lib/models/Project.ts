@@ -1,12 +1,12 @@
-import { ObjectId } from "mongodb";
+import { ObjectId } from 'mongodb';
+import { Skill } from './Skill';
 
-export class Project {
-  constructor(
-    public title: string,
-    public description: string,
-    public repoUrl: string,
-    public liveUrl: string,
-    public technologies: string[],
-    public _id?: ObjectId
-  ) {}
+export interface Project {
+  _id?: ObjectId;
+  userId: ObjectId;
+  title: string;
+  description: string;
+  repoUrl: string;
+  liveUrl: string;
+  skills: Skill[];
 }

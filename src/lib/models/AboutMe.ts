@@ -1,14 +1,19 @@
-export class AboutMe {
-  constructor(
-    public interests: string[],
-    public summary: string,
-    public skills: { name: string; years: number, userId: string }[],
-    public languages: { name: string; level: 'Basic' | 'Intermediate' | 'Advanced' | 'Native' }[],
-    public contact: {
-      email: string;
-      phone: string;
-      scheduleLink?: string;
-    },
-    public _id?: string
-  ) {}
+export interface ContactInfo {
+  email: string;
+  phone: string;
+  meetingLink: string;
+}
+
+export interface Language {
+  name: string;
+  level: string;
+}
+
+export interface AboutMe {
+  _id?: string;
+  userId: string;
+  summary: string;
+  interests: string[];
+  languages: Language[];
+  contact: ContactInfo;
 }

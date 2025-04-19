@@ -1,10 +1,11 @@
-export class Experience {
-  constructor(
-    public jobTitle: string,
-    public company: string,
-    public startDate: string,
-    public description: string,
-    public endDate?: string,
-    public _id?: string
-  ) {}
+import { ObjectId } from "mongodb";
+
+export interface Experience {
+  _id?: ObjectId;
+  userId: ObjectId;
+  jobTitle: string;
+  company: string;
+  description: string;
+  startYear: number;
+  endYear?: number;
 }

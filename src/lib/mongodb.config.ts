@@ -10,6 +10,10 @@ declare global {
   var _mongoClientPromise: Promise<MongoClient>;
 }
 
+if (!process.env.MONGODB_URI) {
+  throw new Error('Por favor define la variable MONGODB_URI en .env.local');
+}
+
 client = new MongoClient(uri, options);
 clientPromise = client.connect();
 

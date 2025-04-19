@@ -1,8 +1,10 @@
-export class Certification {
-  constructor(
-    public title: string,
-    public issuer: string,
-    public downloadUrl: string,
-    public _id?: string
-  ) {}
+import { ObjectId } from "mongodb";
+
+export interface Certification {
+  _id?: ObjectId;
+  userId: ObjectId;
+  title: string;
+  issuer: string;
+  year: number;
+  fileUrl: string;
 }

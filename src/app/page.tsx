@@ -7,7 +7,7 @@ export default function Home() {
         <source src="/media/background.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/60 z-[-1]" />
-      <section className="flex flex-col gap-10 text-center">
+      <section className="flex flex-col gap-20 text-center justify-center w-3/4">
         <h1 className="text-5xl uppercase">¡Hola! Yo soy <span className="font-bold">Miguel Hernandez</span></h1>
         <h2 className="text-3xl">Desarrollador Frontend especializado en Angular y apasionado por los videojuegos.</h2>
       </section>

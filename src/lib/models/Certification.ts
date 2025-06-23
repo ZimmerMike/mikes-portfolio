@@ -1,8 +1,8 @@
 import { ObjectId } from "mongodb";
 
 export interface Certification {
-  _id?: ObjectId;
-  userId: ObjectId;
+  _id?: string;
+  userId: string;
   title: string;
   issuer: string;
   year: number;

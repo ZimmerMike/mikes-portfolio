@@ -1,8 +1,8 @@
 import { ObjectId } from "mongodb";
 
 export interface Experience {
-  _id?: ObjectId;
-  userId: ObjectId;
+  _id?: string;
+  userId: string;
   jobTitle: string;
   company: string;
   description: string;

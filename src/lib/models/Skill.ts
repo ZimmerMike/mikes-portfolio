@@ -1,9 +1,9 @@
 import { ObjectId } from "mongodb";
 
 export interface Skill {
-    _id?: ObjectId;
-    userId: ObjectId;
-    name: string;
-    experienceYears: number;
+    _id?: string;
+    UserId: string;
+    Name: string;
+    ExperienceYears: number;
   }
   

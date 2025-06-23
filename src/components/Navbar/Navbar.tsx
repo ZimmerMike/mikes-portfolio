@@ -15,7 +15,7 @@ export default function Navbar() {
     <>
       {/* Desktop: sidebar */}
       <aside className="hidden lg:flex w-1/3 h-screen items-center justify-center text-white z-50">
-        <div className="flex w-full items-center lg:flex-col lg:gap-2 lg:w-[90%]">
+        <div className="flex w-full max-w-md items-center lg:flex-col lg:gap-2 lg:w-[90%]">
           {navItems.map((item) => (
             <NavbarItem
               key={item.href}

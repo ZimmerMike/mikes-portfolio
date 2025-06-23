@@ -1,8 +1,8 @@
 import { ObjectId } from "mongodb";
 
 export interface Education {
-  _id?: ObjectId;
-  userId: ObjectId;
+  _id?: string;
+  userId: string;
   institution: string;
   degree: string;
   fieldOfStudy: string;

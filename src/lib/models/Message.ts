@@ -1,8 +1,8 @@
 import { ObjectId } from "mongodb";
 
 export interface Message {
-  _id?: ObjectId;
-  userId: ObjectId;
+  _id?: string;
+  userId: string;
   name: string;
   email: string;
   content: string;

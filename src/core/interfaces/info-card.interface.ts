@@ -5,6 +5,7 @@ export interface InfoCardProps {
   description?: string;           // Texto descriptivo o resumen
   tags?: string[];                // Etiquetas o tecnologías usadas
   link?: string;                  // URL para proyecto, certificado, etc.
+  repoLink?: string;                  // URL para proyecto, certificado, etc.
   icon?: React.ReactNode;         // Ícono o imagen decorativa opcional
   variant?: 'default' | 'small';  // Tamaño o estilo si lo quieres modificar por sección
 }
